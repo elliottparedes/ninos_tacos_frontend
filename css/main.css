@@ -179,3 +179,11 @@ html {
 .font-small {
     font-size: 1.5vw;
 }
+
+.success {
+    background-color: #4BB543;
+}
+
+.cream{
+    background-color: #FFFAF3;
+}

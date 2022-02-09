@@ -38,6 +38,7 @@ thisForm.addEventListener('submit', async function (e) {
 
 Http.onreadystatechange = (e) => {
   console.log(Http.responseText)
+  window.location.href = "/thanks.html";
 }
 
 });
