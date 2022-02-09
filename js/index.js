@@ -1,4 +1,9 @@
+
+
 window.onscroll = function() {scrollFunction()};
+
+document.getElementById("jumbotron").style.height = window.innerHeight;
+
  
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

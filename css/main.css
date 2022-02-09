@@ -187,3 +187,7 @@ html {
 .cream{
     background-color: #FFFAF3;
 }
+
+html,body{
+    margin:0;
+    }
