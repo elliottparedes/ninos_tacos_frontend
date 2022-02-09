@@ -2,7 +2,6 @@
 
 window.onscroll = function() {scrollFunction()};
 
-document.getElementById("jumbotron").style.height = window.innerHeight;
 
  
 function scrollFunction() {
@@ -19,8 +18,10 @@ function scrollFunction() {
 }
 
 
-const thisForm = document.getElementById('myForm');
-thisForm.addEventListener('submit', async function (e) {
+const thisForm = document.getElementById("myForm");
+if(thisForm)
+{
+  thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
     console.log(thisForm.name.value)
     const Http = new XMLHttpRequest();
@@ -47,3 +48,59 @@ Http.onreadystatechange = (e) => {
 }
 
 });
+}
+
+
+
+const contactForm = document.getElementById("contactForm");
+if(contactForm)
+{
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    console.log(contactForm.contactName.value)
+    const Http = new XMLHttpRequest();
+    const url='https://ninostacosbackend.herokuapp.com/addMessage';
+    Http.open("POST", url);
+    Http.setRequestHeader("Content-Type", "application/json; charset=UTF-8")
+    Http.send(JSON.stringify({
+      "name":contactForm.contactName.value,
+      "email": contactForm.contactEmail.value,
+      "subject": contactForm.contactSubject.value,
+      "comments": contactForm.contactComments.value,
+    
+      
+    }));
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+  window.location.href = "/thanks.html";
+}
+
+});
+}
+
+
+//    contat form 
+// const contactForm = document.getElementById('contactForm');
+// contactForm.addEventListener('submit', async function (e) {
+//     e.preventDefault();
+  
+//     const Http = new XMLHttpRequest();
+//     const url='https://ninostacosbackend.herokuapp.com/addMessage';
+//     Http.open("POST", url);
+//     Http.setRequestHeader("Content-Type", "application/json; charset=UTF-8")
+//     Http.send(JSON.stringify({
+//       "name":contactForm.name.value,
+//       "email": contactForm.email.value,
+//       "subject": contactForm.subject.value,
+//       "comments": contactForm.comments.value,
+      
+      
+//     }));
+
+// Http.onreadystatechange = (e) => {
+//   console.log(Http.responseText)
+//   window.location.href = "/thanks.html";
+// }
+
+// });
