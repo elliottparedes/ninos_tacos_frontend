@@ -73,7 +73,7 @@ if(contactForm)
 
 Http.onreadystatechange = (e) => {
   console.log(Http.responseText)
-  window.location.href = "/thanks.html";
+  window.location.href = "/sent.html";
 }
 
 });
