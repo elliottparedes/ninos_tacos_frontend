@@ -1,9 +1,5 @@
-
-
 window.onscroll = function() {scrollFunction()};
 
-
- 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     
@@ -17,8 +13,8 @@ function scrollFunction() {
   }
 }
 
-
 const thisForm = document.getElementById("myForm");
+
 if(thisForm)
 {
   thisForm.addEventListener('submit', async function (e) {
@@ -80,27 +76,5 @@ Http.onreadystatechange = (e) => {
 }
 
 
-//    contat form 
-// const contactForm = document.getElementById('contactForm');
-// contactForm.addEventListener('submit', async function (e) {
-//     e.preventDefault();
-  
-//     const Http = new XMLHttpRequest();
-//     const url='https://ninostacosbackend.herokuapp.com/addMessage';
-//     Http.open("POST", url);
-//     Http.setRequestHeader("Content-Type", "application/json; charset=UTF-8")
-//     Http.send(JSON.stringify({
-//       "name":contactForm.name.value,
-//       "email": contactForm.email.value,
-//       "subject": contactForm.subject.value,
-//       "comments": contactForm.comments.value,
-      
-      
-//     }));
 
-// Http.onreadystatechange = (e) => {
-//   console.log(Http.responseText)
-//   window.location.href = "/thanks.html";
-// }
 
-// });
