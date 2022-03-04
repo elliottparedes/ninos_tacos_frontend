@@ -281,7 +281,7 @@ html,body{
   @media (max-width: 600px)
   {
     .adjustedHeight{
-      height:80vh !important;
+      height:90vh !important;
       
   }
   }
