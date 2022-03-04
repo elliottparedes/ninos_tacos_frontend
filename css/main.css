@@ -9,7 +9,7 @@ html {
   }
 
 .bg-black {
-    background-color: black;
+    background-color: rgb(25,26,21);
 }
 .bg-white{
     background-color: rgb(253,254,255);
@@ -250,6 +250,26 @@ html,body{
   /* Style the back side */
   .flip-card-back {
     background-color: white;
-    color: white;
+    color: black;
     transform: rotateY(180deg);
+  }
+
+
+  .navmodal {
+    font-size:2em;
+    color:black;
+    text-decoration: none;
+  }
+  a:hover {
+      color: rgb(255, 174, 0);
+  }
+ 
+  a {
+    text-decoration: none !important;
+  }
+
+  .cn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
