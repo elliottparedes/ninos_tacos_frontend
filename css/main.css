@@ -273,3 +273,16 @@ html,body{
     justify-content: center;
     align-items: center; 
   }
+  
+  .adjustedHeight{
+    height:100vh;
+}
+
+  @media (max-width: 600px)
+  {
+    .adjustedHeight{
+      height:80vh !important;
+      
+  }
+  }
+ 
