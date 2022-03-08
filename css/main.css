@@ -48,7 +48,7 @@ html {
 }
 
 .gold-bg {
-    background-color:rgb(255, 174, 0);
+    background-color:#f9be36;
 }
 
 .black-text {
@@ -94,8 +94,8 @@ html {
 }
 
 .cursive {
-    font-family: 'Festive', cursive;
-    font-family: 'Yellowtail', cursive;
+  font-family: 'Architects Daughter', cursive;
+  color:#f9be36;
 }
 
 
@@ -277,6 +277,12 @@ html,body{
   .adjustedHeight{
     height:100vh;
 }
+ 
+ .border-gold {
+   border-style: solid;
+   border-width: 5px;
+   border-color:#f9be36;
+ }
 
   @media (max-width: 600px)
   {
