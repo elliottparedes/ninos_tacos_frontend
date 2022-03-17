@@ -4,6 +4,12 @@
     -o-transition: background-color 0.75s ease-out;
     transition: background-color 0.75s ease-out;
 }
+
+.center {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -212,8 +218,9 @@ html,body{
 .flip-card {
     background-color: transparent;
     width: 100%;
-    height: 200px;
-    border: 1px solid #f1f1f1;
+    height: 10rem;
+    
+    /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
