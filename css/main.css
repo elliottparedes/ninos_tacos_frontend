@@ -323,7 +323,11 @@ html,body{
       height:90vh !important;
       
     }
-    
+    .parallax{
+      background-image: url("") !important;
+      background-color: rgb(25,26,21) !important;
+    }
+
 
 
   }
