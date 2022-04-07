@@ -324,11 +324,10 @@ html,body{
       
     }
     .parallax{
-      
-      background-color:#d6af55;
-     
-      
+      background-image: url("") !important;
+      background-color: rgb(25,26,21)! important;
 
     }
+   
   }
  
