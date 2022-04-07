@@ -324,8 +324,9 @@ html,body{
       
     }
     .parallax{
-      background-image: url("/images/flag.WEBP") !important;
-      /* object-fit: cover; */
+      
+      background-color:#d6af55;
+     
       
 
     }
